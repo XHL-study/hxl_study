@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hxl_study/pages/page_animate/index2.dart';
-import 'package:hxl_study/routes/animate.dart';
-import 'package:hxl_study/routes/router.dart';
+import 'package:hxl_study/router/animate.dart';
+import 'package:hxl_study/router/settings.dart';
 
 class PageAnimateIndex extends StatelessWidget {
   static const String route = 'page/animate/index';
@@ -20,7 +20,7 @@ class PageAnimateIndex extends StatelessWidget {
           MaterialButton(
             onPressed: () {
               Navigator.of(context).pushNamed(PageAnimateIndex2.route,
-                  arguments: const HXLRouteSettings(pageAnimate: HXLPageAnimate.slidToTop, arguments: "哦哦"));
+                  arguments: const HXLRouteSettings(title: "哈哈", pageAnimate: HXLPageAnimate.slidToTop, arguments: "哦哦"));
             },
             child: const Text("to pate/animate/index2 slidToLeft HXLRouteSettings arguments"),
           ),

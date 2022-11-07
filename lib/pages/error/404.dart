@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hxl_study/routes/animate.dart';
-import 'package:hxl_study/routes/router.dart';
+import 'package:hxl_study/router/animate.dart';
+import 'package:hxl_study/router/settings.dart';
 
 class Page404 extends StatelessWidget {
   const Page404({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hxl_study/routes/animate.dart';
-import 'package:hxl_study/routes/router.dart';
+import 'package:hxl_study/router/animate.dart';
+import 'package:hxl_study/router/settings.dart';
 
 
 class PageAnimateIndex2 extends StatelessWidget {
@@ -12,13 +12,13 @@ class PageAnimateIndex2 extends StatelessWidget {
   Widget build(BuildContext context) {
     HXLRouteSettings args = ModalRoute.of(context)!.settings as HXLRouteSettings;
 
-    debugPrint("${args.pageAnimate == HXLPageAnimate.slidToTop}");
+    debugPrint("${args.title}");
     return Scaffold(
       appBar: AppBar(
         title: const Text("index2"),
       ),
       body: Center(
-        child: Text('test page animate page index2\n $args'),
+        child: Text('test page animate page index2\n $args',textAlign: TextAlign.center,),
       ),
     );
   }

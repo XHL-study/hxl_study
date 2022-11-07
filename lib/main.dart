@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hxl_study/common/constant/str.dart';
 import 'package:hxl_study/pages/error/404.dart';
-import 'package:hxl_study/routes/router.dart';
+import 'package:hxl_study/router/route.dart';
+import 'package:hxl_study/router/settings.dart';
 
 void main() {
   runApp(const MyApp());
