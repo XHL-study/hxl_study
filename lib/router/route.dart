@@ -1,3 +1,4 @@
+import 'package:hxl_study/pages/index.dart';
 import 'package:hxl_study/pages/page_animate/index.dart';
 import 'package:hxl_study/pages/page_animate/index2.dart';
 import 'package:hxl_study/router/animate.dart';
@@ -9,12 +10,17 @@ import 'package:hxl_study/router/settings.dart';
 class Routes {
   Routes._();
 
-  static const String initialRoute = PageAnimateIndex.route;
+  static const String initialRoute = Index.route;
 
   static Map<String, HXLRouter> routes = {
+    Index.route: HXLRouter(
+      title: 'index',
+      pageBuilder: () => const Index(),
+    ),
     PageAnimateIndex.route: HXLRouter(
       title: 'animate index',
       pageBuilder: () => const PageAnimateIndex(),
+      pageAnimate: HXLPageAnimate.slidToLeft,
     ),
     PageAnimateIndex2.route: HXLRouter(
       title: 'animate index2',

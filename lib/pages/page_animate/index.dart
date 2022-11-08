@@ -4,7 +4,7 @@ import 'package:hxl_study/router/animate.dart';
 import 'package:hxl_study/router/settings.dart';
 
 class PageAnimateIndex extends StatelessWidget {
-  static const String route = 'page/animate/index';
+  static const String route = '/page/animate/index';
 
   const PageAnimateIndex({Key? key}) : super(key: key);
 
@@ -19,51 +19,85 @@ class PageAnimateIndex extends StatelessWidget {
         children: [
           MaterialButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(PageAnimateIndex2.route,
-                  arguments: const HXLRouteSettings(title: "哈哈", pageAnimate: HXLPageAnimate.slidToTop, arguments: "哦哦"));
+              Navigator.of(context).pushNamed(
+                PageAnimateIndex2.route,
+                arguments: const HXLRouteSettings(
+                  title: "哈哈",
+                  pageAnimate: HXLPageAnimate.slidToTop,
+                  arguments: "哦哦",
+                ),
+              );
             },
-            child: const Text("to pate/animate/index2 slidToLeft HXLRouteSettings arguments"),
+            child: const Text("to /pate/animate/index2 slidToLeft HXLRouteSettings arguments"),
           ),
           MaterialButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(PageAnimateIndex2.route, arguments: "哦哦");
+              Navigator.of(context).pushNamed(
+                PageAnimateIndex2.route,
+                arguments: "哦哦",
+              );
             },
-            child: const Text("to pate/animate/index2 system default arguments"),
+            child: const Text("to /pate/animate/index2 system default arguments"),
           ),
           MaterialButton(
             onPressed: () {
-              Navigator.of(context)
-                  .pushNamed('/page/404', arguments: const HXLRouteSettings(pageAnimate: HXLPageAnimate.slidToLeft, arguments: "找不到页面"));
+              Navigator.of(context).pushNamed(
+                '/page/dd/404',
+                arguments: const HXLRouteSettings(
+                  pageAnimate: HXLPageAnimate.slidToLeft,
+                  arguments: "找不到页面",
+                ),
+              );
             },
-            child: const Text("to page/404 slidToLeft HXLRouteSettings arguments"),
+            child: const Text("to /page/dd/404 slidToLeft HXLRouteSettings arguments"),
           ),
           MaterialButton(
             onPressed: () {
-              Navigator.of(context)
-                  .pushNamed('/page/404', arguments: const HXLRouteSettings(pageAnimate: HXLPageAnimate.slidToRight, arguments: "找不到页面"));
+              Navigator.of(context).pushNamed(
+                '/page/404',
+                arguments: const HXLRouteSettings(
+                  pageAnimate: HXLPageAnimate.slidToRight,
+                  arguments: "找不到页面",
+                ),
+              );
             },
-            child: const Text("to page/404  slidToRight HXLRouteSettings arguments"),
+            child: const Text("to /page/404  slidToRight HXLRouteSettings arguments"),
           ),
           MaterialButton(
             onPressed: () {
-              Navigator.of(context)
-                  .pushNamed('/page/404', arguments: const HXLRouteSettings(pageAnimate: HXLPageAnimate.slidToTop, arguments: "找不到页面"));
+              Navigator.of(context).pushNamed(
+                '/page/404',
+                arguments: const HXLRouteSettings(
+                  pageAnimate: HXLPageAnimate.slidToTop,
+                  arguments: "找不到页面",
+                ),
+              );
             },
-            child: const Text("to page/404  slidToTop HXLRouteSettings arguments"),
+            child: const Text("to /page/404  slidToTop HXLRouteSettings arguments"),
           ),
           MaterialButton(
             onPressed: () {
-              Navigator.of(context)
-                  .pushNamed('/page/404', arguments: const HXLRouteSettings(pageAnimate: HXLPageAnimate.slidToBottom, arguments: "找不到页面"));
+              Navigator.of(context).pushNamed(
+                '/page/404',
+                arguments: const HXLRouteSettings(
+                  pageAnimate: HXLPageAnimate.slidToBottom,
+                  arguments: "找不到页面",
+                ),
+              );
             },
-            child: const Text("to page/404  slidToBottom HXLRouteSettings arguments"),
+            child: const Text("to /page/404  slidToBottom HXLRouteSettings arguments"),
           ),
           MaterialButton(
             onPressed: () {
-              Navigator.of(context).pushNamed('/page/404',
-                  arguments: const HXLRouteSettings(pageAnimate: HXLPageAnimate.slidToBottomRight, arguments: "找不到页面"));
+              Navigator.of(context).pushNamed(
+                '/page/404',
+                arguments: const HXLRouteSettings(
+                  pageAnimate: HXLPageAnimate.slidToBottomRight,
+                  arguments: "找不到页面",
+                ),
+              );
             },
-            child: const Text("to page/404  slidToBottomRight HXLRouteSettings arguments"),
+            child: const Text("to /page/404  slidToBottomRight HXLRouteSettings arguments"),
           ),
         ],
       )),
